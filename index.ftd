@@ -1,40 +1,129 @@
--- my-ds.page: Welcome to doc-site
+--import:kankeshmendola.github.io/assets
 
+--import:kankeshmendola.github.io/headeer as navbar
+--import:kankeshmendola.github.io/base-layout as layout
+--import:kankeshmendola.github.io/social-buttons as social
+--import:kankeshmendola.github.io/bast-text as text
+--import:kankeshmendola.github.io/footer as footer
+--import:kankeshmendola.github.io/hero-toast as github-toast
+--import:kankeshmendola.github.io/button as button
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+--layout.base-layout:
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+--navbar.header 
+logo:$assests.files.image.logo.svg
+logoURL:/images/imAGE
+header-item1: Home
+header-item2: About
+header-item3: Blogs
+header-item4: tweets
+header-item5: Experience
+header-item6: contact 
+header-item1-link: /portfolio
+header-item2-link: /portfolio/Home
+header-item3-link: /portfolio/Blogs
+header-item4-link: /portfolio/tweets
+header-item1-link: /portfolio/experience
+header-item1-link: /portfolio/context
+cta-itme1: Resume
+cta-item1-link: http://ayush1010.com/resume
+cta-item2: schedule a meeting
+cta-item2-link: http://calendly.com/ayushsoni1010
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- lib.toast:
+title : hello, I'm a Full Stack Developer Based in India
+link: https://KankeshMendola.com/github
 
--- ds.h3: 🚀 Fast Track 
+--lib.hero-ui-base-text-wrapper:
+firstTitle: I'm
+secondTittle: Kankesh Mendola,
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+--lib.hero-of-base-text-wrapper:
+firstTittle: full Stack
+secondTittle: Developer
 
--- ds.h3: 🌟 Whats next?
+-- import: ayushsoni1010.me/assets
+-- import: ayushsoni1010.me/lib as lib
+-- import: ayushsoni1010.github.io/ui-packages/header as navbar
+-- import: ayushsoni1010.github.io/ui-packages/base-layout as layout
+-- import: ayushsoni1010.github.io/ui-packages/social-buttons as social
+-- import: ayushsoni1010.github.io/ui-packages/base-text as text
+-- import: ayushsoni1010.github.io/ui-packages/footer as footer
+-- import: ayushsoni1010.github.io/ui-packages/hero-toast as github-toast
+-- import: ayushsoni1010.github.io/ui-packages/button as button
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
--- ds.h3: 👀 Want to learn more?
+-- layout.base-layout:
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- navbar.header:
+logo: $assets.files.images.logo.svg
+logoURL: /
+header-item1: Home
+header-item2: About
+header-item3: Blogs
+header-item4: Tweets
+header-item5: Experience
+header-item6: Contact
+header-item1-link: /
+header-item2-link: /about
+header-item3-link: /blogs
+header-item4-link: /tweets
+header-item5-link: /experience
+header-item6-link: /contact
+cta-item1: Resume
+cta-item1-link: https://ayushsoni1010.com/resume
+cta-item2: Schedule a Meeting
+cta-item2-link: https://calendly.com/ayushsoni1010
 
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
--- ds.h3: 🎯 Used by?
+-- lib.toast:
+title: Hello, I'm a Full Stack Developer based in India
+link: https://ayushsoni1010.com/github
 
-Our all documentation sites uses this `doc-site` theme.
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- ftd.row: 
+margin-top.px: 60
+spacing.fixed.px: 14
 
--- ds.h2: Learn fastn and become a pro?
+-- ftd.column:
+spacing.fixed.px: 20
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- lib.hero-ui-base-text-wrapper:
+firstTitle: I'm
+secondTitle: Ayush Soni,
 
--- end: my-ds.page
+-- lib.hero-ui-base-text-wrapper:
+firstTitle: full stack
+secondTitle: developer
+
+-- lib.hero-ui-base-text-wrapper:
+firstTitle: and
+secondTitle: designer.
+
+-- ftd.text: I design and create functional and beautiful applications with passion and a focus on user experience and high quality.
+role: $lib.home-description-responsive-typography
+margin-top.px: 10
+width.fixed.px: 700
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- button.secondary: 
+title: Hire me
+link: mailto:ayushsoni1010.work@gmail.com
+
+-- button.primary: 
+title: Schedule a Meeting
+link: https://calendly.com/ayushsoni1010/
+isNewTab: true
+
+-- end: ftd.row
